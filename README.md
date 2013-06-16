@@ -10,7 +10,19 @@
 
 fork of libcaca ruby extensions.
 
-## SYNOPSIS:
+## SYNOPSIS
+
+```
+require 'caca'
+c = Caca::Canvas.new(20,10)
+c.put_str(2,3, "plop!")
+c.draw_thin_polyline([[0,0],[0,2], [5,2], [0,0]])
+d = Caca::Display.new(c)
+d.title= "Test !"
+d.refresh
+```
+
+## FEATURES/PROBLEMS:
 
 The API is kind of awkward right now with regards to user input. The original
 docs from the libcaca repo recommending doing something like this:
@@ -47,6 +59,14 @@ After checking out the source, run:
   $ rake
 
 This will compile the c extension and run the tests.
+
+## NOTE ABOUT TESTS
+
+It doesn't quite work out when you are running your tests in the same terminal
+that libcaca is using for its display. I suggest using the X11 driver when
+running the display tests.
+
+`export CACA_DRIVER=x11`
 
 ## LICENSE:
 
