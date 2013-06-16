@@ -32,4 +32,21 @@ class DisplayTest < MiniTest::Test
     d = Caca::Display.new()
     d.cursor = 1
   end
+  def test_get_mouse_coordinates
+    c = Caca::Canvas.new(3, 3)
+    d = Caca::Display.new(c)
+    refute_nil(d.mouse_x)
+    refute_nil(d.mouse_y)
+  end
+  def test_get_display_dimensions
+    c = Caca::Canvas.new(3, 3)
+    d = Caca::Display.new(c)
+    refute_nil(d.height)
+    refute_nil(d.width)
+  end
+  def test_get_time
+    c = Caca::Canvas.new(3, 3)
+    d = Caca::Display.new(c)
+    refute_nil(d.time)
+  end
 end
