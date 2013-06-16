@@ -5,7 +5,7 @@ $:.unshift lib unless $:.include?(lib)
 require 'caca/version'
 
 Gem::Specification.new do |s|
-  s.name        = "libcaca-ruby"
+  s.name        = "kaka"
   s.version     = Caca::VERSION
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors     = [
