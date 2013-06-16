@@ -2,3 +2,4 @@
 *.so
 Makefile
 *.log
+*.gem
