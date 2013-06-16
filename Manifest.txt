@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/kaka
+lib/kaka.rb
+test/test_kaka.rb
