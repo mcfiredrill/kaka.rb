@@ -6,11 +6,11 @@
 
 * https://github.com/mcfiredrill/kaka.rb
 
-== DESCRIPTION:
+## DESCRIPTION:
 
 fork of libcaca ruby extensions.
 
-== SYNOPSIS:
+## SYNOPSIS:
 
 The API is kind of awkward right now with regards to user input. The original
 docs from the libcaca repo recommending doing something like this:
@@ -32,15 +32,15 @@ https://github.com/mcfiredrill/dirbird/blob/master/lib/events.rb
 I'd like to see if there's another way to do this besides just monkeypatching
 the event class in your application.
 
-== REQUIREMENTS:
+## REQUIREMENTS:
 
 * libcaca
 
-== INSTALL:
+## INSTALL:
 
 * gem install kaka
 
-== DEVELOPERS:
+## DEVELOPERS:
 
 After checking out the source, run:
 
@@ -48,7 +48,7 @@ After checking out the source, run:
 
 This will compile the c extension and run the tests.
 
-== LICENSE:
+## LICENSE:
 
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, December 2004
